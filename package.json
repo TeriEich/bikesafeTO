@@ -1,0 +1,28 @@
+{
+  "name": "bikesafeTO",
+  "version": "1.0.0",
+  "description": "A bike safety app for the Toronto area created as a final project for the Lighthouse Labs web development bootcamp. This app displays and filters bike theft and accident data points from the Toronto Police and user reports on an interactive map using Google Map API.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd backend && nodemon server.js\" \"cd frontend && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeriEich/bikesafeTO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeriEich/bikesafeTO/issues"
+  },
+  "homepage": "https://github.com/TeriEich/bikesafeTO#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
