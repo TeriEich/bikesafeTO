@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const mongoose = require('mongoose');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -8,7 +10,7 @@ const API_PORT = 3001;
 const app = express();
 const router = express.Router();
 
-const dbRoute = '';
+const dbRoute = process.env.DB_URI;
 
 //this is what connects the backend to the database:
 mongoose.connect(
